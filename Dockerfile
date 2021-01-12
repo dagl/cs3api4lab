@@ -3,6 +3,8 @@ FROM jupyter/base-notebook:a07573d685a4
 #               https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
 #test webhook
 #another test
+#third test
+
 
 COPY cs3api4lab /opt/cs3/cs3api4lab
 COPY src /opt/cs3/src
