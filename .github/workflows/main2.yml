@@ -16,11 +16,10 @@ jobs:
         uses: docker/setup-buildx-action@v1
       - 
         name: test
+        run: echo "$USERNAME $PASSWORD"
         env: 
           USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
-        run: | 
-          echo $USERNAME $PASSWORD
       -
         name: Login to DockerHub
         env: 
